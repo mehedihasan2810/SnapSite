@@ -1,0 +1,15 @@
+{
+  "name": "snap-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mehedi Hasan",
+  "license": "ISC",
+  "dependencies": {
+    "grapesjs": "^0.21.8"
+  }
+}
