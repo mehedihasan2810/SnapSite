@@ -1,18 +1,16 @@
-import terser from "@rollup/plugin-terser";
+import terser from '@rollup/plugin-terser';
 
 export default {
-  input: "src/main.js",
+  input: 'src/index.ts',
   output: [
-    // {
-    //   // file: "bundle.js",
-    //   dir: "dist",
-    //   format: "es",
-    // },
     {
-      // file: "bundle.min.js",
-      dir: "dist",
-      format: "es",
-      name: "version",
+      file: 'dist/index.js',
+      format: 'es',
+    },
+    {
+      file: 'dist/index.min.js',
+      format: 'iife',
+      name: 'snapSite',
       plugins: [terser()],
     },
   ],

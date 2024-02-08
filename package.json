@@ -5,12 +5,16 @@
   "main": "src/main.js",
   "type": "module",
   "scripts": {
-    "build": "rm dist/* & rollup --c"
+    "build": "rimraf dist && rollup --c",
+    "dev": "rollup --c --watch"
   },
   "keywords": [],
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
-    "rollup": "^4.9.6"
+    "rimraf": "^5.0.5",
+    "rollup": "^4.9.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }
