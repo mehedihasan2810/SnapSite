@@ -1,8 +1,8 @@
-console.log('fooooooo');
+console.log("fooooooo");
 
 function myNmaeismehe() {
-  console.log('hello');
+  console.log("hello");
 }
 
 myNmaeismehe();
-console.log('whatttt');
+console.log("whatttt");
