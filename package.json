@@ -1,23 +1,15 @@
 {
   "name": "snap-site",
-  "version": "1.0.0",
-  "description": "Snap Site",
-  "main": "src/main.js",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "rimraf dist && rollup --c",
-    "dev": "rollup --c --watch"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.4",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.56.0",
-    "prettier": "^3.2.5",
-    "rimraf": "^5.0.5",
-    "rollup": "^4.9.6",
-    "typescript": "^5.3.3"
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0"
   }
 }
