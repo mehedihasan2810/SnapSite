@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 /** @jsxImportSource theme-ui */
 import { Link } from "@theme-ui/components";
 import { ControlType, applyPropertyControls } from "../../property-controls";
@@ -16,7 +17,6 @@ const HeaderBasic = ({ justifyContent = "space-between", ...props }) => {
   );
 };
 
-// eslint-disable-next-line react/display-name
 HeaderBasic.Logo = (props: any) => {
   return (
     <Link
@@ -29,11 +29,10 @@ HeaderBasic.Logo = (props: any) => {
   );
 };
 
-// eslint-disable-next-line react/display-name
 HeaderBasic.Nav = (props: any) => {
   return <nav {...props} />;
 };
-// eslint-disable-next-line react/display-name
+
 HeaderBasic.Link = (props: any) => {
   return (
     <Link
