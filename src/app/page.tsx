@@ -1,15 +1,27 @@
 "use client";
 
-import { DragAndDrop, DraggableComponent } from "@/DragAndDrop";
-import { useLayoutEffect } from "react";
+import * as t from "@babel/types";
 
 export default function Home() {
-  useLayoutEffect(() => {
-    const dragAndDrop = new DragAndDrop();
+  const node = (
+    <h1 title="hey">
+      foo<p>what</p>
+    </h1>
+  );
 
-    // Usage: Create draggable components
-    new DraggableComponent("text");
-    new DraggableComponent("image");
-  }, []);
-  return <div id="app" className="app"></div>;
+  // console.log(node);
+  console.log(
+    t.jsxAttribute(
+      t.jsxIdentifier("foo"),
+      t.jsxExpressionContainer(t.numericLiteral(0))
+    )
+  );
+
+  // console.log(t.numericLiteral(0));
+  // console.log(t.jsxExpressionContainer(t.numericLiteral(0)));
+  return (
+    <div id="app" className="app">
+      hello
+    </div>
+  );
 }
